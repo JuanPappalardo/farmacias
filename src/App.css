@@ -1,4 +1,25 @@
 .farma-btn {
+  background: none;
+  border: none !important;
+  cursor: pointer;
+}
+
+.farma-btn:focus {
+  outline: 0px;
+}
+
+.farma-btn img {
+  background: none !important;
   width: 60px;
   height: 60px;
+  border: none !important;
+}
+
+.popup-marker {
+  color: #008fb3;
+}
+
+.btn-popup {
+  color: #096c85;
+  font-weight: bold;
 }

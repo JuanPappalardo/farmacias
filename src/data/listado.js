@@ -16,7 +16,7 @@ export const FARMACIAS = [
     tipologia: "Farmacia ambulatoria comercial",
     cp: "1888",
     domicilio: "AV.EVA PERON  3683",
-    sitio_web: "",
+    sitio_web: "http://wwww.sitiofalso.com",
     lat: "-34.813666",
     long: "-58.2800307",
   },
