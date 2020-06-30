@@ -1,3 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: hsla(16, 90%, 85%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(16, 90%, 85%, 1) 0%,
+    hsla(49, 100%, 81%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(16, 90%, 85%, 1) 0%,
+    hsla(49, 100%, 81%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(16, 90%, 85%, 1) 0%,
+    hsla(49, 100%, 81%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBC8B6", endColorstr="#ffeda0", GradientType=1 );
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.contenedor-Main {
+  height: 100%;
+  width: 100%;
+}
+.contenedor-Home {
+  height: 100%;
+}
+/* home */
+.home-logo {
+  max-height: 200px;
+}
+
+.home-jumbotron {
+  background-color: white !important;
+  border-style: solid;
+  border-color: #4ecdc4;
+}
+.home-jumbotron h1 {
+  font-family: "Galada", cursive;
+}
+.donde {
+  color: #ff6b6b;
+}
+.farma {
+  color: #4ecdc4;
+}
+/* mapa  */
+.mapa {
+  border-style: solid;
+  border-color: #4ecdc4;
+  background-color: #ffffff;
+  padding: 0px !important;
+}
+.map-title {
+  font-family: "Galada", cursive;
+  font-size: 60px !important;
+}
+.map-logo {
+  max-height: 6em;
+}
 .farma-btn {
   background: none;
   border: none !important;
@@ -22,4 +100,28 @@
 .btn-popup {
   color: #096c85;
   font-weight: bold;
+}
+
+/* pages*/
+
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
 }
