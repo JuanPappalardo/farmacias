@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
-import Map from "./mapComponent";
+import MapContainer from "./mapContainerComponent";
 import Home from "./homeComponent";
 import { FadeTransform } from "react-animation-components";
 
@@ -35,7 +35,7 @@ class Main extends Component {
                   exitTransform: "scale(0.75) translateY(-25%)",
                 }}
               >
-                <Map></Map>
+                <MapContainer></MapContainer>
               </FadeTransform>
             )}
           />

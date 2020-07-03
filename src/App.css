@@ -8,7 +8,7 @@ body {
   background: linear-gradient(
     90deg,
     hsla(16, 90%, 85%, 1) 0%,
-    hsla(49, 100%, 81%, 1) 100%
+    hsl(49, 100%, 81%, 1) 100%
   );
 
   background: -moz-linear-gradient(
@@ -68,6 +68,7 @@ body {
   border-color: #4ecdc4;
   background-color: #ffffff;
   padding: 0px !important;
+  height: 100vh;
 }
 .map-title {
   font-family: "Galada", cursive;
@@ -93,15 +94,6 @@ body {
   border: none !important;
 }
 
-.popup-marker {
-  color: #008fb3;
-}
-
-.btn-popup {
-  color: #096c85;
-  font-weight: bold;
-}
-
 /* pages*/
 
 .page-enter {
@@ -124,4 +116,44 @@ body {
   opacity: 0.01;
   transform: translateX(100%);
   transition: all 300ms ease-out;
+}
+
+/* nuevo mapa css*/
+
+.mapContainer {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.mapboxgl-marker {
+  background-image: url("/images/medicine.svg") !important;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+}
+
+.marker-house {
+  background-image: url("/images/house.svg") !important;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.marker-title {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.btn-popup {
+  color: #008fb3 !important;
+  font-weight: bold;
+}
+
+.mapboxgl-marker svg {
+  display: none;
 }
